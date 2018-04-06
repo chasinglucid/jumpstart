@@ -21,3 +21,12 @@ body {
 .active {
   
 }
+
+div.jumbotron.jumbotron-bike {
+  background-image: url('../images/jumbotron-bike.jpg')
+}
+
+/* font outline */
+.jumbotron-bike p {
+  text-shadow: 0 0 2px #ffffff; 
+}
