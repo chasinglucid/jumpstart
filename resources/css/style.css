@@ -5,3 +5,19 @@ html {
 body {
   
 }
+
+#logo {
+  
+}
+
+/* hide logo when screen shrinks */
+@media only screen and (max-width: 575px) {
+  #logo {
+    display: none;
+  }
+} 
+
+/* Bootstrap Overrides */
+.active {
+  
+}
