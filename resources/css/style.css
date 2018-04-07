@@ -11,10 +11,6 @@ h1 {
   font-family: 'Monoton';
 }
 
-#logo {
-  
-}
-
 /* hide logo when screen shrinks */
 @media only screen and (max-width: 575px) {
   #logo {
@@ -22,9 +18,15 @@ h1 {
   }
 } 
 
-/* Bootstrap Overrides */
-.active {
+.image-container {
   
+}
+
+/* navigation */
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover {
+  background-color: inherit;
+  color: #399bd1;
 }
 
 div.jumbotron.jumbotron-bike {
@@ -40,6 +42,35 @@ div.jumbotron.jumbotron-bike {
 .jumbotron p {
   color: white;
   text-align: center;
-  text-shadow: 0 0 2px #ffffff; 
+  text-shadow: -1px -1px 0 #000000; 
 }
 
+/* featured */
+#featured {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+#featured .container {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid green;
+}
+
+#featured .container .image-container {
+  width: 50%;
+  border: 1px solid blue;
+}
+
+.container .documentary-desc,
+.container .categories {
+  width: 25%;
+  border: 1px solid orange;
+}
+
+.documentary-desc p.byline {
+  
+}
