@@ -18,7 +18,15 @@ h1 {
   }
 } 
 
+.container {
+  display: flex;
+}
+
 .image-container {
+  
+}
+
+p.byline {
   
 }
 
@@ -29,7 +37,7 @@ h1 {
   color: #399bd1;
 }
 
-div.jumbotron.jumbotron-bike {
+.jumbotron-bike {
   background-image: url('../images/jumbotron-bike.jpg');
 }
 
@@ -46,8 +54,7 @@ div.jumbotron.jumbotron-bike {
 }
 
 /* featured */
-#featured {
-  display: flex;
+#featured.container {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
@@ -55,8 +62,8 @@ div.jumbotron.jumbotron-bike {
 }
 
 #featured .container {
-  display: flex;
   justify-content: flex-start;
+  width: 100%;
   border: 1px solid green;
 }
 
@@ -71,6 +78,23 @@ div.jumbotron.jumbotron-bike {
   border: 1px solid orange;
 }
 
-.documentary-desc p.byline {
+p.byline {
   
+}
+
+/* projects */
+#projects.container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid pink;
+}
+
+#projects .container {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#projects .container .image-container {
+  width: 30%;
 }
