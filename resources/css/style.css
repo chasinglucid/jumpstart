@@ -1,6 +1,8 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,7 +10,22 @@ body {
 }
 
 h1 {
-  font-family: 'Monoton';
+  font-size: 7.1rem;  
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size 1.3rem;
+  font-weight: bold;
 }
 
 /* hide logo when screen shrinks */
@@ -30,27 +47,74 @@ p.byline {
   
 }
 
+.relative-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* button */
+.btn {
+}
+
+.btn-primary.btn-lg {
+  margin-top: 2.8rem;
+  width: 11.4rem;
+  padding: 1.3rem 0;
+  color: white;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}     
+
+.btn-primary.btn-lg:active {
+  box-shadow:  0 0 12px rgba(0,0,0,0.9);
+}
+
+.btn-primary.btn-lg:active {
+  box-shadow:  0 0 0 rgba(0,0,0,0.9);
+}
+
+
+
 /* navigation */
+nav {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 .navbar-default .navbar-nav .active a,
 .navbar-default .navbar-nav .active a:hover {
   background-color: inherit;
   color: #399bd1;
 }
 
-.jumbotron-bike {
-  background-image: url('../images/jumbotron-bike.jpg');
+.jumbotron {
+  height: 44rem;
+  padding-top: 11.85rem;
+  padding-bottom: 11.85rem;
+  bacground-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000000;
+  border: 1px solid neonpink;
 }
 
 .jumbotron h1 {
+  font-family: 'Monoton';
   color: white;
-  text-align: center;
+  text-shadow: -1px -1px 0 #000000,
+     -1px -1px 0 #000000,
+     -1px -1px 0 #000000,
+     -1px -1px 0 #000000;
 }
 
-/* font outline */
 .jumbotron p {
-  color: white;
-  text-align: center;
-  text-shadow: -1px -1px 0 #000000; 
+  max-width: 51.3rem;
+  margin: auto;
+}
+.jumbotron-bike {
+  background-image: url('../images/jumbotron-bike.jpg');
 }
 
 /* featured */
@@ -58,6 +122,7 @@ p.byline {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100%;
   border: 1px solid red;
 }
 
@@ -78,8 +143,20 @@ p.byline {
   border: 1px solid orange;
 }
 
-p.byline {
-  
+
+.categories li {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#featured h3 {
+  background-color: inherit;
+  margin-bottom: 1.42rem;
+  color: #399bd1;
+}
+
+.categories h4 {
+  color: #399bd1;
 }
 
 /* projects */
@@ -88,13 +165,45 @@ p.byline {
   justify-content: flex-start;
   flex-direction: column;
   border: 1px solid pink;
+  width: 100%;
+  margin-bottom: 5.85rem;
 }
 
 #projects .container {
   justify-content: flex-start;
   width: 100%;
+  border: 1px solid neongreen;
 }
 
 #projects .container .image-container {
+
+}
+
+#projects h3 {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+.project-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px dashed red;
   width: 30%;
+}
+
+/* Having Trouble */
+#trouble {
+  margin: 5.2rem 0;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+#trouble h2 {
+  margin-bottom: 1.4rem;
+}
+
+#trouble p {
+  width: 42rem;
+  margin: auto;
 }

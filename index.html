@@ -15,8 +15,8 @@
   <link href="resources/css/reset_plus.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
-
+ 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
 
 </head>
@@ -24,41 +24,38 @@
   
   <!-- fixed to top menu -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Explore</a></li>
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Explore</a></li>
         <li><a href="#">Start a project</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
-      <div class="navbar-header navbar-right">
-        <a href="index.html" class="navbar-brand"><img id="logo" class="brand" src="resources/images/logo.png" /></a>
-      </div>
+      <img id="logo" class=" navbar-brand navbar-right collapse navbar-collapse" src="resources/images/logo.png" />
     </div>
   </nav>
   
-  
+  <!-- banner/jumbotron -->
   <div class="jumbotron jumbotron-bike">
     <h1>Get Going</h1>
     <p>Jumpstart your startup with some crowdsourced seen money, or support one of our 300,000,000+ creators and get rewards.</p>
+    <div class="relative-container">
+      <a href="#" class="btn btn-primary btn-lg cta">Jump in</a>
+    </div>
   </div>
   
-  <header>
-
-    </header>
-
-    <!-- featured project -->
-    <div id="featured" class="container">
-      <h2>Featured Projects</h2>
-      <div class="container">
-        <div class="image-container">
+  <!-- featured project -->
+  <div id="featured" class="container">
+    <h3>Featured Projects</h3>
+    <div class="container">
+      <div class="image-container">
         <img class="featured-img" src="resources/images/featured-project.png" alt="little red house with snowy mountains" />
       </div>
-        <div class="documentary-desc">
-        <h3>DeFrost: A Documentary</h2>
+      <div class="documentary-desc">
+        <h3>DeFrost: A Documentary</h3>
         <p class="byline">by Leo De Firenze</p>
         <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
       </div>
-        <div class="categories">
+      <div class="categories">
         <h3>Product Categories</h3>
         <ul>
           <li>Art</li>
@@ -79,39 +76,57 @@
           <li>Yoyos</li>
           </ul>
       </div>
-      </div>
     </div>
+  </div>
   
   <!-- projects -->
   <div id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="container">
-      <div class="image-container">
-        <img class="projects-img" src="resources/images/project1.png" />
-      </div>
-      <h3>The Right Tights</h3>
-      <p class="byline">by Riley Mae</p>
-      <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
-    </div>
-    <div class="container">
+    <h3>Projects</h3>
+      <div class="container">
+        <section class="container project-container">
+          <div class="image-container">
+            <img class="projects-img" src="resources/images/project1.png" />
+          </div>
+          <article>
+        <h4>The Right Tights</h4>
+        <p class="byline">by Riley Mae</p>
+        <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+      </article>
+        </section>
+        <section class="container project-container">
       <div class="image-container">
         <img class="projects-img" src="resources/images/project2.png" />
       </div>
-      <h3>Peppermint Smart Home</h3>
-      <p class="byline">by Brian McDonald</p>
-      <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
-    </div>
-    <div class="container">
-      <div class="image-container">
+      <article>
+        <h4>Peppermint Smart Home</h4>
+        <p class="byline">by Brian McDonald</p>
+        <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+      </article>
+    </section>
+        <section class="container project-container">
+          <div class="image-container">
         <img class="projects-img" src="resources/images/project3.png" />
       </div>
-      <h3>American Streetlife</h3>
-      <p class="byline">by Patrick Wallace</p>
-      <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+            <article>
+              <h4>American Streetlife</h4>
+              <p class="byline">by Patrick Wallace</p>
+              <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+          </article>
+      </section>
     </div>
   </div>
 
-    <footer>
+  <!-- having trouble? -->
+  <div id="trouble">
+    <h2>Having trouble thinking of an idea?</h2>
+    <p>Inventors™ block strikes at the worst times. But thatâ€™s all changed with Jumpstart™s Good Idea Generator Lite (GIGLi).</p>
+    <div class="relative-container">
+      <a href="#" class="btn btn-primary btn-lg cta">Learn more</a>
+    </div>
+
+  </div>
+  
+  <footer>
 
     </footer>
   
@@ -122,7 +137,7 @@
   crossorigin="anonymous"></script>
 
     <!-- slick.js -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   
   <script type="javascript" src="resources/js/main.js"></script>
 </body>
