@@ -1,9 +1,14 @@
 html {
-  
+  font-size: 16px;
+  font-family: 'Open Sans';
 }
 
 body {
   
+}
+
+h1 {
+  font-family: 'Monoton';
 }
 
 #logo {
@@ -23,10 +28,18 @@ body {
 }
 
 div.jumbotron.jumbotron-bike {
-  background-image: url('../images/jumbotron-bike.jpg')
+  background-image: url('../images/jumbotron-bike.jpg');
+}
+
+.jumbotron h1 {
+  color: white;
+  text-align: center;
 }
 
 /* font outline */
-.jumbotron-bike p {
+.jumbotron p {
+  color: white;
+  text-align: center;
   text-shadow: 0 0 2px #ffffff; 
 }
+
