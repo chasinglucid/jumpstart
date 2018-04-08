@@ -43,12 +43,16 @@ img {
   width: 100%;
 }
 
-p.byline {
-  
+a, 
+p, 
+li {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .relative-container {
   position: relative;
+  top: -16rem;
   width: 100%;
   text-align: center;
 }
@@ -57,21 +61,23 @@ p.byline {
 .btn {
 }
 
-.btn-primary.btn-lg {
+.btn-primary {
   margin-top: 2.8rem;
-  width: 11.4rem;
+  width: 160px;
   padding: 1.3rem 0;
+  border: 0;
   color: white;
   background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  transition: 0.5s box-shadow;
 }     
 
-.btn-primary.btn-lg:active {
-  box-shadow:  0 0 12px rgba(0,0,0,0.9);
+.btn-primary:active {
+  box-shadow:  0 0 0 rgba(0,0,0,0.5);
 }
 
-.btn-primary.btn-lg:active {
-  box-shadow:  0 0 0 rgba(0,0,0,0.9);
+.btn-primary:hover {
+  box-shadow:  0 0 12px rgba(0,0,0,0.9);
 }
 
 
@@ -89,8 +95,8 @@ nav {
 .jumbotron {
   height: 44rem;
   padding-top: 11.85rem;
-  padding-bottom: 11.85rem;
-  bacground-size: cover;
+/*  padding-bottom: 11.85rem;
+*/  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
@@ -107,6 +113,25 @@ nav {
      -1px -1px 0 #000000;
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and  (max-width: 767px) {
+  .jumbotron {
+    padding-top: 10rem;
+/*    padding-bottom: 30px;
+*/  }
+  
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and  (max-width: 575px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+}
+
 .jumbotron p {
   max-width: 51.3rem;
   margin: auto;
@@ -116,7 +141,10 @@ nav {
 }
 
 /* featured */
-#featured h3 {
+#featured {
+  margin-top: -7rem; /* fixes problems with the relative container spacing */
+}
+#featured h2 {
   background-color: inherit;
   margin-bottom: 1.42rem;
   color: #399bd1;
@@ -128,10 +156,6 @@ nav {
 
 .categories h4 {
   color: #399bd1;
-}
-.categories li {
-  line-height: 1.4;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 /* projects */
@@ -154,6 +178,6 @@ nav {
 }
 
 #trouble p {
-  width: 42rem;
+  max-width: 42rem;
   margin: auto;
 }
