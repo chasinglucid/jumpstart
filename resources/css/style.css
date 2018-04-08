@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.17rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -35,12 +35,12 @@ h4 {
   }
 } 
 
-.container {
-  display: flex;
+.image-container {
+  overflow: hidden;
 }
 
-.image-container {
-  
+img {
+  width: 100%;
 }
 
 p.byline {
@@ -75,7 +75,6 @@ p.byline {
 }
 
 
-
 /* navigation */
 nav {
   font-size: 1.1rem;
@@ -97,7 +96,6 @@ nav {
   color: white;
   text-align: center;
   text-shadow: -1px -1px 0 #000000;
-  border: 1px solid neonpink;
 }
 
 .jumbotron h1 {
@@ -118,83 +116,35 @@ nav {
 }
 
 /* featured */
-#featured.container {
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100%;
-  border: 1px solid red;
-}
-
-#featured .container {
-  justify-content: flex-start;
-  width: 100%;
-  border: 1px solid green;
-}
-
-#featured .container .image-container {
-  width: 50%;
-  border: 1px solid blue;
-}
-
-.container .documentary-desc,
-.container .categories {
-  width: 25%;
-  border: 1px solid orange;
-}
-
-
-.categories li {
-  line-height: 1.4;
-  color: rgba(0, 0, 0, 0.7);
-}
-
 #featured h3 {
   background-color: inherit;
   margin-bottom: 1.42rem;
   color: #399bd1;
 }
 
+#featured .image-container {
+  19rem;
+}
+
 .categories h4 {
   color: #399bd1;
 }
+.categories li {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
 
 /* projects */
-#projects.container {
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  border: 1px solid pink;
-  width: 100%;
-  margin-bottom: 5.85rem;
-}
-
-#projects .container {
-  justify-content: flex-start;
-  width: 100%;
-  border: 1px solid neongreen;
-}
-
-#projects .container .image-container {
-
-}
 
 #projects h3 {
   background-color: inherit;
   color: #399bd1;
-}
-
-.project-container {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 1px dashed red;
-  width: 30%;
+  margin-top: 2.5rem;
 }
 
 /* Having Trouble */
 #trouble {
-  margin: 5.2rem 0;
+  padding: 5.2rem 0;
   background-color: #f3f3f3;
   text-align: center;
 }
