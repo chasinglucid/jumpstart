@@ -37,6 +37,14 @@ h4 {
 
 .image-container {
   overflow: hidden;
+  opacity: 0.7;
+  transition: transform .5s,
+              opacity .5s;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 img {
@@ -95,13 +103,11 @@ nav {
 .jumbotron {
   height: 44rem;
   padding-top: 11.85rem;
-/*  padding-bottom: 11.85rem;
-*/  background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  text-shadow: -1px -1px 0 #000000;
 }
 
 .jumbotron h1 {
@@ -117,8 +123,7 @@ nav {
 @media only screen and  (max-width: 767px) {
   .jumbotron {
     padding-top: 10rem;
-/*    padding-bottom: 30px;
-*/  }
+  }
   
   .jumbotron h1 {
     font-size: 5.7rem;
@@ -135,9 +140,24 @@ nav {
 .jumbotron p {
   max-width: 51.3rem;
   margin: auto;
+  color: white;
+  text-shadow: -1px -1px 0 #000000;
 }
+
 .jumbotron-bike {
   background-image: url('../images/jumbotron-bike.jpg');
+}
+
+.jumbotron-bottles {
+  background-image: url('../images/jumbotron-beer.jpg');
+}
+
+.jumbotron-duffel {
+  background-image: url('../images/jumbotron-duffel.jpg');
+}
+
+.jumbotron-flowers {
+  background-image: url('../images/jumbotron-flowers.jpg');
 }
 
 /* featured */
@@ -180,4 +200,18 @@ nav {
 #trouble p {
   max-width: 42rem;
   margin: auto;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and  (max-width: 767px) {
+  #trouble {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Slick Overrides */
+
+.slick-slide {
+  outline: none;
 }
